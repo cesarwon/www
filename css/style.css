@@ -97,11 +97,10 @@ a {
 /* 헤더 */
 
 .header {
-    min-height: 115px;
     background-color: #fff;
     border-radius: 0 0 15px 15px;
     position: relative;
-    padding: 0 30px;
+    padding: 0 30px 40px 30px;
 }
 
 
@@ -160,7 +159,6 @@ a {
 
 .main-menu ul {
     list-style-type: none;
-    background: lime;
     position: absolute;
     white-space: nowrap;
     top: 47px;
@@ -171,8 +169,8 @@ a {
     position: relative;
 }
 
-.main-menu>li>a {
-    font-size: 1.6rem;
+.main-menu span {
+    font-size: 1.5rem;
     font-family: "Noto Sans Bold";
     color: rgba(255, 255, 255, 0.95);
     display: block;
@@ -182,12 +180,15 @@ a {
     text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;
 }
 
-.main-menu>li>a:hover {
+.main-menu span:hover,
+.main-menu span:focus {
     /*color: hsla(45, 80%, 80%, 1);*/
     color: #ff0;
+    outline: 0;
 }
 
-.main-menu>li>a:hover::after {
+.main-menu span:hover::after,
+.main-menu span:focus::after {
     content: "";
     display: block;
     border-top: 2px solid #181818;
@@ -212,30 +213,39 @@ a {
     top: 2px;
 }
 
-.about-html {
+.main-menu ul a {
+    padding: 8px 15px 7px 0;
     display: block;
-    top: 0;
+}
+
+.about-html {
+    display: none;
     left: 0;
 }
 
 .about-css {
     display: none;
+    left: 0;
 }
 
 .web-standards {
     display: none;
+    left: 0;
 }
 
 .web-accessibility {
     display: none;
+    left: -140px;
 }
 
 .qna {
     display: none;
+    left: -170px;
 }
 
 .archive {
     display: none;
+    right: -25px;
 }
 
 .visual {
