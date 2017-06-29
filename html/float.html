@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>float 속성 익히기</title>
+    <style>
+        .box {
+            background: yellow;
+            width: 500px;
+        }
+        
+        .box::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .box img {
+            float: right;
+            position: relative;
+            right: -50px;
+        }
+        
+        .note {
+            background: pink;
+            /*clear: both;
+            margin-top: 100px;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="../images/news.gif" alt=""> 그 핫라인의 보를 신경세포에 직접 전해 곧바로 뇌까지 이르게 할 수 있다는 것이다.
+    </div>
+    <div class="note">
+        그 핫라인의 시작점이 되는 독특한 장내 세포들의 기능이 이번에 비교적 자세히 규명됐다. 이 세포들은 장내 환경이나 화합물 성분을 탐지하는 역할을 하면서, 그렇게 탐지한 정보를 신경세포에 직접 전해 곧바로 뇌까지 이르게 할 수 있다는 것이다.
+
+    </div>
+</body>
+
+</html>
